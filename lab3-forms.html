@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Lab 3 - Form: Coffee Order </title>
+</head>
+<body>
+   <h1>Coffee Order Form</h1> 
+    <form action="https://www.w3schools.com/action_page.php" method="get">
+         <label for="name">Customer Name:</label>
+         <input type="text" id="name" name="name" required><br><br>
+        
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required><br><br>
+         
+         <label for="coffee-type">Coffee Type:</label>
+         <select id="coffee-type" name="coffee-type" required>
+            <option value="latte">Latte</option>
+            <option value="cappuccino">Cappuccino</option>
+            <option value="americano">Americano</option>
+            <option value="espresso">Espresso</option>
+         </select><br><br>
+    
+         <label for="size">Size:</label>
+         <input type="radio" id="small" name="size" value="small" required>
+         <label for="small">Small</label>
+         <input type="radio" id="medium" name="size" value="medium">
+         <label for="medium">Medium</label>
+         <input type="radio" id="large" name="size" value="large">
+         <label for="large">Large</label><br><br>
+    
+         <label for="extras">Extras:</label><br>
+         <input type="checkbox" id="cream" name="extras[]" value="cream">
+         <label for="cream">Cream</label><br>
+         <input type="checkbox" id="sugar" name="extras[]" value="sugar">
+         <label for="sugar">Sugar</label><br>
+         <input type="checkbox" id="extra-shot" name="extras[]" value="extra-shot">
+         <label for="extra-shot">Extra Shot</label><br>
+         <input type="checkbox" id="whipped-cream" name="extras[]" value="whipped-cream">
+         <label for="whipped-cream">Whipped Cream</label><br><br>
+
+         <label for="special_instructions">Special Instructions:</label><br>
+         <textarea id="special_instructions" name="special_instructions" rows="10" cols="50"></textarea><br><br>
+         
+         <input type="submit" value="Place Order">
+      </form>
+</body>
+</html>
+
+
